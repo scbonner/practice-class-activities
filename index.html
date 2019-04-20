@@ -167,6 +167,122 @@ var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 var myData = myArray[2][1];
 console.log(myData);
 
+// Manipulate Arrays With push()
+
+// Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.push(["happy", "joy"]); 
+// ourArray now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line.
+
+myArray.push(["dog", 3]);
+console.log(myArray);
+
+// Manipulate Arrays With pop()
+// Example
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop(); 
+// removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.pop();
+
+console.log(removedFromMyArray);
+
+// Manipulate Arrays with shift()
+
+// Example
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.shift();
+console.log(removedFromMyArray);
+
+
+// Manipulate Arrays With unshift()
+
+// Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy"); 
+// ourArray now equals ["Happy", "J", "cat"]
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line.
+
+myArray.unshift(["Paul", 35]);
+console.log(myArray);
+
+
+// Shopping List
+
+var myList = [["Mary", 15], ["Johnny", 17], ["Tisha", 19], ["Herman", 18], ["Violet", 16]];
+
+console.log(myList);
+
+// Write Reusable Code with Functions
+function reusableFunction() {
+    console.log("Hi World");
+    console.log("Hi World");
+    console.log("Hi World");
+}
+reusableFunction();
+
+function makeMyBed() {
+    console.log("I'm so happy.");
+
+}
+// to call function has to be outside the curly braces
+makeMyBed()
+;
+
+// Passing Values to Functions with Arguments
+// Example
+function ourFunctionWithArgs(a, b) {
+  console.log(a - b);
+}
+ourFunctionWithArgs(10, 5); // Outputs 5
+
+// Only change code below this line.
+
+function functionWithArgs(a, b){
+  console.log(a + b);
+}
+functionWithArgs(1,2);
+
+
+function functionWithArgs(a, b){
+  console.log(a + b);
+}
+functionWithArgs(7, 9);
+
+function functionGasMoney (a, b) {
+    console.log(a * b);
+}
+functionGasMoney(50, 4);
+
+function functionSavingsAccount(a, b) {
+    console.log(a + b);
+}
+functionSavingsAccount(200, 150);
+
+
+
 
 
 
