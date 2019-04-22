@@ -366,9 +366,27 @@ const remove = houseChores.pop()
 console.log(remove);
 console.log(houseChores.length);
 
+// create an array
 
+var fruits = ['apple', 'banana'];
+// console.log(fruits.length);
+// console.log(fruits);
+// fruits.push('mango');
+// // ['strawberry', 'banana', 'mango'];
+// var pos = fruits.indexof('banana');
 
+// access (index into) an array item
+// 
+// loop over an array
+fruits.forEach(function(item, index, array) {
+    console.log(item, index);
 
+})
+// add to the end of an array
+
+var newLength = fruits.push('orange');
+console.log(newLength);
+console.log(fruits);
 
 
 
